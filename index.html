@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamatkan Satwa Langka - Adopsi Virtual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="assets/tiger.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay">
+            <h1>Adopsi Virtual. Selamatkan Mereka.</h1>
+            <p>Berikan harapan baru untuk satwa langka Indonesia</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Satwa Terselamatkan</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Donatur Aktif</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Lokasi Konservasi</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="article">
+            <h2>Mereka Membutuhkan Kita</h2>
+            <div class="article-grid">
+                <article>
+                    <div class="article-icon">🐯</div>
+                    <h3>Cerita Satwa Langka</h3>
+                    <p>Indonesia memiliki kekayaan satwa langka yang luar biasa, termasuk Harimau Sumatera dan Orangutan. Namun, populasi mereka terus menurun akibat berbagai ancaman.</p>
+                    <div class="article-stat">
+                        <strong>400</strong>
+                        <span>Harimau tersisa di alam liar</span>
+                    </div>
+                </article>
+                
+                <article>
+                    <div class="article-icon">🌳</div>
+                    <h3>Kondisi Habitat</h3>
+                    <p>Deforestasi dan perubahan fungsi hutan telah menghancurkan rumah mereka. Setiap tahun, ribuan hektar hutan hilang, membuat satwa kehilangan tempat tinggal.</p>
+                    <div class="article-stat">
+                        <strong>80%</strong>
+                        <span>Habitat telah berkurang</span>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="article-icon">❤️</div>
+                    <h3>Dampak Adopsi Virtual</h3>
+                    <p>Melalui program adopsi virtual, Anda membantu menyediakan makanan, perawatan kesehatan, dan perlindungan habitat bagi satwa langka. Setiap donasi membuat perbedaan!</p>
+                    <div class="article-stat">
+                        <strong>100%</strong>
+                        <span>Donasi untuk konservasi</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="impact-showcase">
+            <h2>Dampak Donasi Anda</h2>
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <img src="assets/food.jpg" alt="Paket Makanan">
+                    <h4>Rp50.000</h4>
+                    <p>1 Paket Makanan Satwa</p>
+                </div>
+                <div class="impact-item">
+                    <img src="assets/health.jpg" alt="Perawatan Kesehatan">
+                    <h4>Rp250.000</h4>
+                    <p>1 Minggu Perawatan Kesehatan</p>
+                </div>
+                <div class="impact-item">
+                    <img src="assets/habitat.jpg" alt="Konservasi Habitat">
+                    <h4>Rp1.000.000</h4>
+                    <p>1 Bulan Perawatan + Konservasi</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="adoption-form">
+            <div class="form-container">
+                <h2>Formulir Adopsi Virtual</h2>
+                <div class="form-progress">
+                    <div class="form-progress-bar"></div>
+                </div>
+                <form id="adoptionForm">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="animal">Pilih Satwa</label>
+                        <select id="animal" name="animal" required>
+                            <option value="">Pilih satwa yang ingin diadopsi</option>
+                            <option value="harimau">Harimau Sumatera</option>
+                            <option value="orangutan">Orangutan</option>
+                            <option value="badak">Badak Jawa</option>
+                            <option value="gajah">Gajah Sumatera</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donation">Jumlah Donasi (Rp)</label>
+                        <input type="number" id="donation" name="donation" min="50000" step="10000" required>
+                        <p id="donationImpact" class="donation-impact"></p>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        <label for="agreement">Saya setuju untuk berdonasi dan mendukung program ini</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Adopsi Sekarang</button>
+                </form>
+            </div>
+            <div class="form-image">
+                <img src="assets/orangutan.jpg" alt="Orangutan di habitatnya" id="animalImage">
+                <div class="image-caption">
+                    <p>"Setiap donasi Anda memberikan harapan baru bagi mereka"</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Apa Kata Mereka</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Proses adopsi virtual sangat mudah dan transparan. Saya senang bisa berkontribusi untuk pelestarian satwa langka Indonesia."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/user1.jpg" alt="Testimonial 1">
+                        <div>
+                            <h4>Sarah Wijaya</h4>
+                            <p>Donatur Aktif</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Update rutin tentang perkembangan satwa yang saya adopsi membuat saya merasa terhubung dengan program konservasi ini."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/user2.jpg" alt="Testimonial 2">
+                        <div>
+                            <h4>Budi Santoso</h4>
+                            <p>Donatur 6 Bulan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang Kami</h3>
+                <p>Program adopsi virtual untuk mendukung pelestarian satwa langka Indonesia.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p>Email: info@selamatkansatwa.org</p>
+                <p>Tel: (021) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ikuti Kami</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Selamatkan Satwa Langka. Mari bersama melindungi warisan alam Indonesia.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
